@@ -42,7 +42,7 @@ pipeline{
             when { expression { params.action == 'create' }}
             steps{
                 script{
-                    statiCodeAnalysis()
+                    staticCodeAnalysis()
                 }
             }
         }
