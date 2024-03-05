@@ -29,7 +29,8 @@ public class HomeResource {
         ResponseData responseData = new ResponseData();
         responseData.setId(1);
         responseData.setName(config.getName());
-        responseData.setPlace("Hyderabad");
+        // responseData.setPlace("Hyderabad");
+        responseData.setPlace("New York");
         responseData.setValue(config.getTest());
         return new ResponseEntity<>(responseData, HttpStatus.OK);
     }
