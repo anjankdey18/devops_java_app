@@ -12,7 +12,7 @@ pipeline{
                 script{
 
                     gitCheckout{
-                        branch: "main"
+                        branch: "main",
                         url: "https://github.com/anjankdey18/devops_java_app.git"
                     }
 
