@@ -1,4 +1,4 @@
-@Library('my-shared-library') _
+@Library('jenkins-shared-library') _
 
 pipeline{
 
@@ -11,7 +11,11 @@ pipeline{
             steps{
                 script{
 
-                    git branch: 'main', url: 'https://github.com/anjankdey18/devops_java_app.git'
+                    gitCheckout{
+                        branch: "main"
+                        url: "https://github.com/anjankdey18/devops_java_app.git"
+                    }
+
                 }
             }
 
