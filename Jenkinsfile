@@ -4,9 +4,9 @@ pipeline{
 
     agent any 
 
-    stages('git checkout'){
+    stages{
 
-        stage{
+        stage('git checkout'){
 
             steps{
                 script{
