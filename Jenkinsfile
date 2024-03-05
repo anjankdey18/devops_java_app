@@ -6,11 +6,15 @@ pipeline{
 
     stages('git checkout'){
 
-        steps{
-            script{
+        stage{
 
-                git branch: 'main', url: 'https://github.com/anjankdey18/devops_java_app.git'
+            steps{
+                script{
+
+                    git branch: 'main', url: 'https://github.com/anjankdey18/devops_java_app.git'
+                }
             }
+
         }
 
     }
