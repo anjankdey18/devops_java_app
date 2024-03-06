@@ -69,6 +69,16 @@
                 <configuration>
                     <release>11</release>
                 </configuration>
+	        </plugin>
+	            <!-- Configure SonarQube plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version>
+                <configuration>
+                    <!-- Set Java version for SonarQube analysis -->
+                    <sonar.java.runtime>java-11-openjdk</sonar.java.runtime>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
